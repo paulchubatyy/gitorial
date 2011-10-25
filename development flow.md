@@ -75,3 +75,8 @@ Upstream в даному прикладі репозиторій команди.
 Пушимо в репозиторій:
 
     $ git push origin master
+    
+Обновлення мердж реквеста:
+
+    $ git push origin feature-branch
+    
