@@ -57,21 +57,21 @@ Upstream в даному прикладі репозиторій команди.
 
 Чекаутимо новий бранч для інтеграції:
 
-    git checkout -b merge-requests/2216
+    $ git checkout -b merge-requests/2216
     
 Аплаємо мердж реквест на цей бранч:
 
-    git pull git@gitserver.org/+dev2/magento.git refs/merge-requests/## ## — номер мердж реквеста
+    $ git pull git@gitserver.org/+dev2/magento.git refs/merge-requests/## ## — номер мердж реквеста
     
 Дивимось коміти:
 
-    git log --pretty=oneline --abbrev-commit master..merge-requests/## ## — номер мердж реквеста, master — в випадку якщо ми мерджимось на master
+    $ git log --pretty=oneline --abbrev-commit master..merge-requests/## ## — номер мердж реквеста, master — в випадку якщо ми мерджимось на master
     
 Аплаємо власне зміни:
 
-      git checkout master
-      git merge merge-requests/2216
+    $ git checkout master
+    $ git merge merge-requests/2216
 
 Пушимо в репозиторій:
 
-      git push origin master
+    $ git push origin master
